@@ -6,7 +6,10 @@ const student = {
     age: 25,
     1: 18,
     2: 145,
-    'location' : "Cox's Bazar"
+    'location' : "Cox's Bazar",
+    mother : {
+        age: 45
+    }
 }
 
 // dot notation
@@ -23,3 +26,7 @@ const studentTwo = student[2]
 const studentDept = student['department']
 const studentLocation2 = student['location']
 console.log(studentOne, studentTwo, studentDept, studentLocation2)
+
+
+// If undefined
+console.log(student.mother?.age);
