@@ -1,0 +1,15 @@
+const names = ['Imran', 'Mohammed', 'sanvi', 'saif'];
+let c = 0;
+for (const name of names){
+    setTimeout( () =>{
+        let cnt = 0;
+        const timer = setInterval( () =>{
+            console.log('Hello , ', name);
+            cnt++;
+            if(cnt == 3){
+                clearInterval(timer);
+            }
+        })
+    }, 1000*c)
+    c++;
+}
